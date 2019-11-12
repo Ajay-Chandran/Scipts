@@ -12,14 +12,16 @@ Shell script for repeating tasks.
 		[http "https://domain.com"]
 			proxy = http://proxyUsername:proxyPassword@proxy.server.com:port
 
+# Credential setting store in diffrent file like .git-credentials: 
+	git config --global credential.helper store
+	git config --global credential.https://domain.com.username username
 
-#Credential setting store in diffrent file like .git-credentials: 
-git config --global credential.helper store
-git config --global credential.https://domain.com.username username
+		#.gitconfig file will look like :
 
-	#.gitconfig file will look like :
+	    		[credential]
+			helper = store
+			[credential "https://domain.com"]
+	 		username = username
+# SSL certificate problem:
+	git config http.sslVerify false 
 
-	    [credential]
-		helper = store
-		[credential "https://domain.com"]
-	 	username = username
