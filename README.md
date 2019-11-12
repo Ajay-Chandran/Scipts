@@ -1,5 +1,8 @@
 # ShellScipts
-Shell script for repeating tasks 
+Shell script for repeating tasks.
+
+# set sublime as editor;
+	git config --global core.editor "'C:/Program Files/Sublime Text 3/sublime_text.exe' -w" 
 
 # Proxy setting for Github:
    git config --global http.https://domain.com.proxy http://proxyUsername:proxyPassword@proxy.server.com:port
