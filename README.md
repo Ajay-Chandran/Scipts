@@ -20,3 +20,4 @@ git config --global credential.https://domain.com.username username
 		helper = store
 		[credential "https://domain.com"]
 	 	username = username
+ 
