@@ -25,3 +25,8 @@ Shell script for repeating tasks.
 # SSL certificate problem:
 	git config http.sslVerify false 
 
+
+# Python script for downloading file 
+	run below commands  
+		pip3 install requests
+		pip install tqdm
